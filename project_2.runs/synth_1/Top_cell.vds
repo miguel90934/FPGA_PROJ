@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Nov 11 15:52:30 2025
+# Process ID         : 16112
+# Current directory  : C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.runs/synth_1
+# Command line       : vivado.exe -log Top_cell.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_cell.tcl
+# Log file           : C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.runs/synth_1/Top_cell.vds
+# Journal file       : C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.runs/synth_1\vivado.jou
+# Running On         : Bread
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency      : 2795 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16407 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 26071 MB
+# Available Virtual  : 17926 MB
+#-----------------------------------------------------------
+source Top_cell.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 492.016 ; gain = 211.359
+Command: read_checkpoint -auto_incremental -incremental C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/utils_1/imports/synth_1/contador.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/utils_1/imports/synth_1/contador.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top_cell -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8836
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1180.336 ; gain = 494.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_cell' [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/top_cell.vhd:27]
+INFO: [Synth 8-3491] module 'wave' declared at 'C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/wave.vhd:5' bound to instance 'u1' of component 'wave' [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/top_cell.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'wave' [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/wave.vhd:21]
+WARNING: [Synth 8-614] signal 'clear' is read in the process but is not in the sensitivity list [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/wave.vhd:145]
+WARNING: [Synth 8-614] signal 'up_down_q' is read in the process but is not in the sensitivity list [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/wave.vhd:248]
+WARNING: [Synth 8-614] signal 'step_reg' is read in the process but is not in the sensitivity list [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/wave.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'wave' (0#1) [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/wave.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Top_cell' (0#1) [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/sources_1/new/top_cell.vhd:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.062 ; gain = 600.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.062 ; gain = 600.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.062 ; gain = 600.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1287.062 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/constrs_1/imports/Lab1_parte1_files/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/constrs_1/imports/Lab1_parte1_files/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.srcs/constrs_1/imports/Lab1_parte1_files/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_cell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_cell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1365.449 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1365.449 ; gain = 679.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1365.449 ; gain = 679.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1365.449 ; gain = 679.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_reg' in module 'wave'
+INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_U_reg' in module 'wave'
+INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_D_reg' in module 'wave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               inicial_d |                              001 |                               00
+                      dh |                              010 |                               01
+                      dt |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_D_reg' using encoding 'one-hot' in module 'wave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               inicial_u |                              001 |                               00
+                      uh |                              010 |                               01
+                      ut |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_U_reg' using encoding 'one-hot' in module 'wave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 inicial |                              000 |                              000
+                      hd |                              001 |                              001
+                    stay |                              010 |                              010
+                      hu |                              011 |                              011
+                    down |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'sequential' in module 'wave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1365.449 ; gain = 679.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1365.449 ; gain = 679.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1498.324 ; gain = 812.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1531.273 ; gain = 845.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1532.551 ; gain = 846.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    14|
+|3     |LUT1   |     2|
+|4     |LUT2   |    15|
+|5     |LUT3   |     8|
+|6     |LUT4   |    38|
+|7     |LUT5   |     8|
+|8     |LUT6   |    18|
+|9     |FDCE   |    42|
+|10    |FDPE   |     2|
+|11    |FDRE   |    11|
+|12    |FDSE   |     1|
+|13    |IBUF   |    10|
+|14    |OBUF   |     5|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1745.422 ; gain = 980.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1745.422 ; gain = 1059.266
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1745.422 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1745.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3e93d9f
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1745.422 ; gain = 1248.395
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1745.422 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.runs/synth_1/Top_cell.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_cell_utilization_synth.rpt -pb Top_cell_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 11 15:54:17 2025...

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Nov 11 15:54:26 2025
+# Process ID         : 4652
+# Current directory  : C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.runs/impl_1
+# Command line       : vivado.exe -log Top_cell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top_cell.tcl -notrace
+# Log file           : C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.runs/impl_1/Top_cell.vdi
+# Journal file       : C:/PCAntigo/MyDriveD/Isel/SEADP/SEADPLAB/project_2/project_2.runs/impl_1\vivado.jou
+# Running On         : Bread
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency      : 2795 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16407 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 26071 MB
+# Available Virtual  : 17726 MB
+#-----------------------------------------------------------
+source Top_cell.tcl -notrace
