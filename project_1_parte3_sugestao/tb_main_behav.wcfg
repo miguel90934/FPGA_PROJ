@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_main_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_main" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,102.730 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,239.331 ns"></ZoomEndTime>
+      <Cursor1Time time="3,400.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="73"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_main/clk_100Meg" type="logic">
+      <obj_property name="ElementShortName">clk_100Meg</obj_property>
+      <obj_property name="ObjectShortName">clk_100Meg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/btn1" type="array">
+      <obj_property name="ElementShortName">btn1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">btn1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/blink2LED" type="logic">
+      <obj_property name="ElementShortName">blink2LED</obj_property>
+      <obj_property name="ObjectShortName">blink2LED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/LED" type="array">
+      <obj_property name="ElementShortName">LED[6:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/TbClock" type="logic">
+      <obj_property name="ElementShortName">TbClock</obj_property>
+      <obj_property name="ObjectShortName">TbClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/TbSimEnded" type="logic">
+      <obj_property name="ElementShortName">TbSimEnded</obj_property>
+      <obj_property name="ObjectShortName">TbSimEnded</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/TbPeriod" type="other">
+      <obj_property name="ElementShortName">TbPeriod</obj_property>
+      <obj_property name="ObjectShortName">TbPeriod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/dut/ctick" type="logic">
+      <obj_property name="ElementShortName">ctick</obj_property>
+      <obj_property name="ObjectShortName">ctick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/dut/ctick_2tick" type="logic">
+      <obj_property name="ElementShortName">ctick_2tick</obj_property>
+      <obj_property name="ObjectShortName">ctick_2tick</obj_property>
+   </wvobject>
+</wave_config>
